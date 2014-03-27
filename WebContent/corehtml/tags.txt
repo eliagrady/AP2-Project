@@ -1,0 +1,1 @@
+<img src="/assets/images/profile-cartoon.jpg" width="477" height="320" class="image left" alt="" style="margin: 5px 15px 0 0" />

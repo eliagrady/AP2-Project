@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Setting Up Your Contact Form</title>
+
+<style>
+body  {background: #f7f7f7; font: 100%/1.375 georgia, "times new roman", serif;padding: 20px 40px;}
+#content {width: 100%; text-shadow: 0 1px #fff;}
+h1 {margin: 0 0 20px 0; font-size: 175%;}
+h2 {margin: 20px 0; font-size: 125%; padding-top: 15px; border-bottom: 1px dotted #222; color: #8AB53F;}
+h3 {margin: 14px 0 10px; font-style: italic; color: #8AB53F; font-size: 100%;}
+h1, h2, h3 {font-family: calibri, arial, sans-serif; font-weight: bold; text-shadow: 0 1px white;}
+a {color: #D45227; text-decoration: none;}
+a:hover {text-decoration: underline;}
+#content p span {font-size: 85%; color: #999; font-style: italic; display: block; padding: 10px; margin: 10px 0 20px 40px;; background: white; border-radius: 10px; box-shadow: 1px 1px 10px #ccc;}
+.highlight {color: #D45227; font-weight: normal;}
+code {color: #A600A6;}
+</style>
+
+</head>
+<body>
+
+<div id="content">
+<h1>Contact Form Setup</h1>
+
+<p>These are setup instructions for the form code found at the <a href="http://pageaffairs.com/code/php-contact-form">Page Affairs</a> website.</p>
+
+<p>This form code assumes that your contact page (that is, the page on which your contact form appears) has a <code>.php</code> extension&mdash;being called something like <code>contact.php</code> or <code>index.php</code>.</p>
+
+<h2>Step One</h2>
+
+<p>Create a new folder on your site called <code>/contact/</code> and upload the <code>index.php</code> file to that folder. (Then your visitors will be able to access your contact page at <code>yoursite.com/contact/</code>)</p>
+
+<p>If you'd prefer to have your contact page at something like <code>yoursite.com/contact.php</code>, then simply rename <code>index.php</code> to <code>contact.php</code> and upload it to the root folder (home folder) of your site.</p>
+
+
+
+<h2>Step Two</h2>
+
+<p>In your <code>/contact/</code> folder, create a new page called <code>thankyou.html</code>. Place your thankyou message in there. (You can make it like a regular page on your site&mdash;with the same styling etc.)</p>
+
+<p>(If you aren't using a separate folder but just have your contact page in the root folder, then place your thankyou page in the root folder too.)</p>
+
+
+
+<h2>Step Three</h2>
+
+<p>Open the <code>index.php</code> in your code editor. You need to make a few simple changes to the top of the file. </p>
+
+<p>In this line: <span>$your_email = "<b class="highlight">name@mailhost.com</b>"; // email address to which the form data will be sent</span> you need to enter the email to which the contact form data is to be sent. So, for example, if you are setting this form up for a client, enter the client's email address.</p>
+
+<p>In this line: <span>$subject = "<b class="highlight">Contact Message</b>"; // subject of the email that is sent</span> you need to enter the subject of the email, which will appear in the recipient's email client. (For example, it might read "Website Contact Message".)</p>
+
+<p>In this line: <span>$thanks_page = "<b class="highlight">thankyou.html</b>"; // path to the thank you page following successful form submission</span> you need to enter the name/URL of the thankyou page. </p>
+
+<p>(If you want the thankyou page to appear at a URL like <code>yoursite.com/contact/thankyou/</code>, then name your thankyou page <code>index.html</code>, and place it in a folder called <code>/thankyou/</code> inside the <code>/contact/</code> folder. Then set the path to <code>/contact/thankyou/</code>.)</p>
+
+
+
+<h2>Extras</h2>
+
+<p>You can, of course, add more to the contact page and style it any way you like. Just be sure to leave all the code before the <code><!DOCTYPE html></code> as is, and ideally leave the form HTML as is. (Most importantly, be sure to leave all the <code>name=""</code> values in the form code as is.)</p>
+
+<p>If you have questions about this setup, post a question on the <a href="http://pageaffairs.com/code/php-contact-form">Page Affairs</a> website.</p>
+
+</div> <!-- end content div -->
+
+
+</body>
+
+</html>
